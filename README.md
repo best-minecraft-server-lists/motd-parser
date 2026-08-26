@@ -293,11 +293,11 @@ COLOR_BY_NAME.get("gold"); // { code: "6", name: "gold", hex: "#ffaa00", ansi: 3
 
 Built and maintained by [Best Minecraft Server Lists](https://bestcobblemonservers.net). Every ranking below is ordered on player counts taken from a direct server ping, never on numbers a server reports about itself.
 
-- [Best Cobblemon servers](https://bestcobblemonservers.net) - The Best Cobblemon Servers, Top 10, Rated by the players
-- [Best Minecraft Prison servers](https://bestprisonservers.com) - The Best Prison Servers, Top 10, Rated by the players
-- [Best Minecraft Skyblock servers](https://bestskyblockservers.net) - The Best Skyblock Servers, Top 10, Rated by the players
-- [Best Minecraft SMP servers](https://bestsmpservers.com) - The Best SMP Servers, Top 10, Rated by the players
-- [Best Minecraft Survival servers](https://bestsurvivalservers.com) - The Best Survival Servers, Top 10, Rated by the players
+- [Best Cobblemon servers](https://bestcobblemonservers.net) - The Best Cobblemon Servers, Top 10, Rated fairly
+- [Best Minecraft Prison servers](https://bestprisonservers.com) - The Best Prison Servers, Top 10, Rated fairly
+- [Best Minecraft Skyblock servers](https://bestskyblockservers.net) - The Best Skyblock Servers, Top 10, Rated fairly
+- [Best Minecraft SMP servers](https://bestsmpservers.com) - The Best SMP Servers, Top 10, Rated fairly
+- [Best Minecraft Survival servers](https://bestsurvivalservers.com) - The Best Survival Servers, Top 10, Rated fairly
 - [Free rankings JSON API](https://bestprisonservers.com/api/rankings.json) - Every ranking above as JSON, CC BY 4.0, no key and no sign-up
 
 Sister libraries:
