@@ -7,11 +7,11 @@
 A Node library and CLI to parse Minecraft MOTD strings and render them anywhere. It reads both legacy `§` colour codes and modern JSON chat components, and outputs ANSI for terminals, HTML for web pages, or plain text for logs and search indexes. Zero dependencies, full TypeScript types.
 
 ```bash
-npx mc-motd "&aTalonMC &7| &lCOBBLEMON RELEASED" --html
+npx mc-motd "&aHypixel Network &7[&b1.8&7/&b26.2&7]" --html
 ```
 
 ```html
-<span style="color:#55ff55">TalonMC </span><span style="color:#aaaaaa">| </span><span style="color:#aaaaaa;font-weight:bold">COBBLEMON RELEASED</span>
+<span style="color:#55ff55">Hypixel Network </span><span style="color:#aaaaaa">[</span><span style="color:#55ffff">1.8</span><span style="color:#aaaaaa">/</span><span style="color:#55ffff">26.2</span><span style="color:#aaaaaa">]</span>
 ```
 
 ## Why
@@ -31,8 +31,8 @@ npm install mc-motd
 ```js
 import { renderPlain } from "mc-motd";
 
-renderPlain("§aTalonMC §7| §lCOBBLEMON RELEASED");
-// "TalonMC | COBBLEMON RELEASED"
+renderPlain("§aHypixel Network §7[§b1.8§7/§b26.2§7]");
+// "Hypixel Network [1.8/26.2]"
 ```
 
 ### Render a MOTD to HTML
@@ -120,7 +120,7 @@ function Motd({ source }) {
 import { status } from "mc-status";
 import { renderHtml } from "mc-motd";
 
-const server = await status("play.talonmc.net");
+const server = await status("play.hypixel.net");
 const html = renderHtml(server.motd.json ?? server.motd.raw);
 ```
 
