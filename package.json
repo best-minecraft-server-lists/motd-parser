@@ -1,0 +1,55 @@
+{
+  "name": "mc-motd",
+  "version": "1.0.0",
+  "description": "Parse and render Minecraft MOTD strings. Handles legacy section-sign colour codes and modern JSON chat components, and renders to ANSI, HTML or plain text. Zero dependencies.",
+  "keywords": [
+    "minecraft",
+    "motd",
+    "minecraft-server",
+    "color-codes",
+    "chat-components",
+    "formatting",
+    "ansi",
+    "html",
+    "minecraft-api",
+    "typescript"
+  ],
+  "homepage": "https://github.com/best-minecraft-server-lists/motd-parser#readme",
+  "bugs": "https://github.com/best-minecraft-server-lists/motd-parser/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/best-minecraft-server-lists/motd-parser.git"
+  },
+  "license": "MIT",
+  "author": "Best Minecraft Server Lists",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "mc-motd": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
